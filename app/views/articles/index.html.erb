@@ -7,4 +7,11 @@
 <%end%>
 <br>
 <%= link_to ' new article', new_article_path %>
+<br>
 
+<% if article_user_signed_in? %>
+  <%= link_to 'Signout',
+  destroy_article_user_session_path, method: :delete %>
+<% else %>
+  <%= link_to 'sign In',new_article_user_session_path %>
+<% end %>
