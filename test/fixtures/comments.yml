@@ -3,7 +3,9 @@
 one:
   commentor: MyString
   comment: MyString
+  article: one
 
 two:
   commentor: MyString
   comment: MyString
+  article: two
