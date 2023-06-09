@@ -7,7 +7,7 @@ class ArticleUser < ApplicationRecord
          :trackable
 
   private
-  
+
   def send_email
     ArticleUserMailer.welcome_email(self).deliver_now
   end
